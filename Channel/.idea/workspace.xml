@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="e2581a1c-a242-4767-9bc1-b46c3f86bfe3" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Go File" />
+      </list>
+    </option>
+  </component>
+  <component name="GOROOT" path="/usr/local/go" />
+  <component name="ProjectId" id="1klqNfuFv4hxoBef3wROKqLLTFK" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultGoTemplateProperty" value="Go File" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="configurable.Global.GOPATH.is.expanded" value="true" />
+    <property name="configurable.Module.GOPATH.is.expanded" value="false" />
+    <property name="configurable.Project.GOPATH.is.expanded" value="true" />
+    <property name="go.import.settings.migrated" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="settings.editor.selected.configurable" value="com.goide.configuration.GoLibrariesConfigurableProvider" />
+  </component>
+  <component name="RunManager" selected="Go Build.go build channelControl.go">
+    <configuration name="go build channelControl.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="Channel" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="FILE" />
+      <filePath value="$PROJECT_DIR$/channelControler/channelControl.go" />
+      <package value="goStudy/Channel" />
+      <directory value="$PROJECT_DIR$" />
+      <method v="2" />
+    </configuration>
+    <configuration name="go build goStudy/Channel/channelControler" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="Channel" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="PACKAGE" />
+      <filePath value="$PROJECT_DIR$/channelControler/channelControl.go" />
+      <package value="goStudy/Channel/channelControler" />
+      <directory value="$PROJECT_DIR$" />
+      <method v="2" />
+    </configuration>
+    <configuration name="go build onewayChannel.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="Channel" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="FILE" />
+      <filePath value="$PROJECT_DIR$/onewayChannel/onewayChannel.go" />
+      <directory value="$PROJECT_DIR$" />
+      <method v="2" />
+    </configuration>
+    <configuration name="go build testClose2.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="Channel" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="FILE" />
+      <filePath value="$PROJECT_DIR$/testClose2/testClose2.go" />
+      <directory value="$PROJECT_DIR$" />
+      <method v="2" />
+    </configuration>
+    <configuration name="go build testClose.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="Channel" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="FILE" />
+      <filePath value="$PROJECT_DIR$/testClose/testClose.go" />
+      <directory value="$PROJECT_DIR$" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Go Build.go build channelControl.go" />
+        <item itemvalue="Go Build.go build goStudy/Channel/channelControler" />
+        <item itemvalue="Go Build.go build onewayChannel.go" />
+        <item itemvalue="Go Build.go build testClose2.go" />
+        <item itemvalue="Go Build.go build testClose.go" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state width="1398" height="231" key="GridCell.Tab.0.bottom" timestamp="1606372287621">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state width="1398" height="231" key="GridCell.Tab.0.bottom/-291.-1057.1920.1057/0.23.1440.877@0.23.1440.877" timestamp="1606323768518" />
+    <state width="1398" height="231" key="GridCell.Tab.0.bottom/0.23.1440.877/-287.-1057.1920.1057@0.23.1440.877" timestamp="1606372287621" />
+    <state width="1398" height="231" key="GridCell.Tab.0.bottom/0.23.1440.877@0.23.1440.877" timestamp="1606371988118" />
+    <state width="1398" height="231" key="GridCell.Tab.0.center" timestamp="1606372287620">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state width="1398" height="231" key="GridCell.Tab.0.center/-291.-1057.1920.1057/0.23.1440.877@0.23.1440.877" timestamp="1606323768517" />
+    <state width="1398" height="231" key="GridCell.Tab.0.center/0.23.1440.877/-287.-1057.1920.1057@0.23.1440.877" timestamp="1606372287620" />
+    <state width="1398" height="231" key="GridCell.Tab.0.center/0.23.1440.877@0.23.1440.877" timestamp="1606371988117" />
+    <state width="1398" height="231" key="GridCell.Tab.0.left" timestamp="1606372287618">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state width="1398" height="231" key="GridCell.Tab.0.left/-291.-1057.1920.1057/0.23.1440.877@0.23.1440.877" timestamp="1606323768515" />
+    <state width="1398" height="231" key="GridCell.Tab.0.left/0.23.1440.877/-287.-1057.1920.1057@0.23.1440.877" timestamp="1606372287618" />
+    <state width="1398" height="231" key="GridCell.Tab.0.left/0.23.1440.877@0.23.1440.877" timestamp="1606371988116" />
+    <state width="1398" height="231" key="GridCell.Tab.0.right" timestamp="1606372287620">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state width="1398" height="231" key="GridCell.Tab.0.right/-291.-1057.1920.1057/0.23.1440.877@0.23.1440.877" timestamp="1606323768518" />
+    <state width="1398" height="231" key="GridCell.Tab.0.right/0.23.1440.877/-287.-1057.1920.1057@0.23.1440.877" timestamp="1606372287620" />
+    <state width="1398" height="231" key="GridCell.Tab.0.right/0.23.1440.877@0.23.1440.877" timestamp="1606371988118" />
+    <state x="229" y="100" key="SettingsEditor" timestamp="1606322170527">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state x="229" y="100" key="SettingsEditor/-291.-1057.1920.1057/0.23.1440.877@0.23.1440.877" timestamp="1606322170527" />
+    <state x="385" y="213" width="670" height="676" key="search.everywhere.popup" timestamp="1606322327670">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state x="385" y="213" width="670" height="676" key="search.everywhere.popup/-291.-1057.1920.1057/0.23.1440.877@0.23.1440.877" timestamp="1606322327670" />
+  </component>
+</project>
