@@ -1,13 +1,10 @@
 package main
 
-import "github.com/Lucasfun/EasyOps/toposort"
+import "github.com/Lucasfun/EasyOps/unit_install"
 
 func main() {
-
-	toposort.Test_toposort()
-	//graph := &testYAML.GraphConfig{}
-	//graph.Init()
-	//
-	//outDegree := graph.New_outDegree()
-	//fmt.Println(outDegree)
+	//topologicalSort.TestInstall()
+	//time.Sleep(time.Second * 3)
+	//topologicalSort.TestInstall()
+	unit_install.TestDemo()
 }
