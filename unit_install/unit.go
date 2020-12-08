@@ -17,10 +17,10 @@ type Install interface {
 	UnitInstall() (bool,string)
 }
 
-func (u *Unit) UnitInstall() bool {	//TODO 实际安装出错形式，判断返回
+func (u *Unit) UnitInstall(mrChan chan methodRequest) {	//TODO 实际安装出错形式，判断返回
 	fmt.Println(u.Name)
 	time.Sleep(time.Duration(rand.Intn(3))*time.Second)
 	//fmt.Println(u.Name + "finish install.")
-	return true
+	mrChan <- u
 }
 
