@@ -66,7 +66,7 @@ func TestInstall() {
 	//for _,unitType := range unitConfig.Config{
 	//	fmt.Println(unitType.Name)
 	//	fmt.Println(unitType.Next)
-	//	fmt.Println(unitType.Install)
+	//	fmt.Println(unitType.InstallFunc)
 	//}
 	degree := GetInfoMap(&unitConfig)
 	//fmt.Println(degree)

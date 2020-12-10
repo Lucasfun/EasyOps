@@ -8,19 +8,22 @@ import (
 )
 
 type Unit struct {
-	Name string `yaml:"name"`
-	Install string `yaml:"install"`
-	Next []string `yaml:"next"`
+	Name    string   `yaml:"name"`
+	Install string   `yaml:"install"`
+	Next    []string `yaml:"next"`
 }
 
 type Install interface {
-	UnitInstall() (bool,string)
+	UnitInstall() (bool, string)
 }
 
-func (u *Unit) UnitInstall(mrChan chan methodRequest) {	//TODO 实际安装出错形式，判断返回
+type Scheduler interface {
+	Report2(*Unit) bool
+}
+
+func (u *Unit) UnitInstall2(s Scheduler) { //TODO 实际安装出错形式，判断返回
 	fmt.Println(u.Name)
-	time.Sleep(time.Duration(rand.Intn(3))*time.Second)
+	time.Sleep(time.Duration(rand.Intn(3)) * time.Second)
 	//fmt.Println(u.Name + "finish install.")
-	mrChan <- u
+	s.Report2(u)
 }
-
