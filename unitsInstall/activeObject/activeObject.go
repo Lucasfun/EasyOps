@@ -12,11 +12,6 @@ type UnitInterface interface {
 	GetNext() []string
 }
 
-type UnitConfigInterface interface {
-	GetInDegree() map[string]int
-	GetOutDegree() map[string]UnitInterface
-}
-
 type methodRequest UnitInterface
 
 type Service struct { //作为ActiveObject通讯对象
@@ -27,24 +22,17 @@ type Service struct { //作为ActiveObject通讯对象
 	N     int //已安装unit数
 }
 
-type Server interface {
-	Scheduler()
-	Wait()
-	Reduction(unit UnitInterface) bool
-	Report(unit UnitInterface) bool
-}
-
-func InitService(config UnitConfigInterface) *Service {
+func InitService(in map[string]int, out map[string]UnitInterface) *Service {
 	s := &Service{
 		queue: make(chan methodRequest, 0),
 		wait:  make(chan int),
-		In:    config.GetInDegree(),
-		Out:   config.GetOutDegree(),
+		In:    in,
+		Out:   out,
 		N:     0,
 	}
 	go s.Scheduler()
-	for unit, in := range config.GetInDegree() {
-		if in == 0 {
+	for unit, n := range s.In {
+		if n == 0 {
 			unitInterface := s.Out[unit]
 			go unitInterface.InstallFunc(func() {
 				s.Report(unitInterface)
@@ -58,6 +46,7 @@ func (s *Service) Scheduler() {
 	defer func() {
 		close(s.wait)
 	}()
+
 	for {
 		select {
 		case mr := <-s.queue:
@@ -87,7 +76,7 @@ func (s *Service) Wait() {
 func (s *Service) Reduction(u UnitInterface) bool {
 	for _, delName := range u.GetNext() { //eg:unitA出队，unitA的next[...]全部入度 - 1
 		s.In[delName] -= 1
-		if s.In[delName] == 0 { //入度为 0 入队
+		if s.In[delName] == 0 { //入度为 0 开始安装
 			unit := s.Out[delName]
 			go unit.InstallFunc(func() {
 				s.Report(unit)

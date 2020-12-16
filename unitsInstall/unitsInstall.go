@@ -6,6 +6,6 @@ import (
 
 func UnitsInstall() {
 	uc := GetUnitsConfig()
-	s := activeObject.InitService(uc)
+	s := activeObject.InitService(uc.inDegree, uc.outDegree)
 	s.Wait()
 }

@@ -2,7 +2,7 @@ package unitsInstall
 
 import (
 	"github.com/Lucasfun/EasyOps/unitsInstall/activeObject"
-	"github.com/Lucasfun/EasyOps/unitsInstall/unitsConfig"
+	"github.com/Lucasfun/EasyOps/unitsInstall/units"
 	"gopkg.in/yaml.v2"
 	"io/ioutil"
 	"log"
@@ -11,7 +11,7 @@ import (
 var fileBytes []byte
 
 type UnitsConfig struct {
-	Config    []*unitsConfig.Unit                   `yaml:"units"`
+	Config    []*units.Unit                         `yaml:"units"`
 	inDegree  map[string]int                        //unit.name: unit.inDegree
 	outDegree map[string]activeObject.UnitInterface //unit.name: *unit
 }
@@ -26,13 +26,13 @@ func (u UnitsConfig) GetOutDegree() map[string]activeObject.UnitInterface {
 
 func GetUnitsConfig() *UnitsConfig {
 	uc := &UnitsConfig{
-		Config:    make([]*unitsConfig.Unit, 0),
+		Config:    make([]*units.Unit, 0),
 		inDegree:  make(map[string]int),
 		outDegree: make(map[string]activeObject.UnitInterface, 0),
 	}
 	//从YAML文件读取各组件依赖关系
 	var err error
-	fileBytes, err = ioutil.ReadFile("./unitsInstall/unitsConfig/unitsConfig.yml")
+	fileBytes, err = ioutil.ReadFile("./unitsInstall/units/unitsConfig.yml")
 	if err != nil {
 		log.Fatal("无法成功从"+"unitsConfig.yml"+"中读取相关信息！", err)
 	}
