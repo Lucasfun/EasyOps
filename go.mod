@@ -2,4 +2,7 @@ module github.com/Lucasfun/EasyOps
 
 go 1.15
 
-require gopkg.in/yaml.v2 v2.4.0
+require (
+	github.com/golang/mock v1.4.4
+	gopkg.in/yaml.v2 v2.4.0
+)

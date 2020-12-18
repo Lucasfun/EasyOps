@@ -1,7 +1,7 @@
 package activeObject
 
 import (
-	"github.com/Lucasfun/EasyOps/unitsInstall/mocks/activeObject"
+	"github.com/Lucasfun/EasyOps/unitsInstall_1.0/mocks/activeObject"
 	"github.com/golang/mock/gomock"
 	"reflect"
 	"testing"
@@ -57,10 +57,8 @@ func TestInitService(t *testing.T) {
 		Out: map[string]UnitInterface{"A": unitA, "B": unitB, "C": unitC},
 	}
 
-	gomock.InOrder(
-		unitA.EXPECT().InstallFunc(gomock.Any()).Return(true).Times(1),
-		unitB.EXPECT().InstallFunc(gomock.Any()).Return(true).Times(1),
-	)
+	unitA.EXPECT().InstallFunc(gomock.Any()).Return(true).Times(1)
+	unitB.EXPECT().InstallFunc(gomock.Any()).Return(true).Times(1)
 	s := InitService(inMap, outMap)
 	time.Sleep(time.Second * 7)
 	// 测试s init后in、out一致、且拉起Unit的install次数与顺序正确即可
